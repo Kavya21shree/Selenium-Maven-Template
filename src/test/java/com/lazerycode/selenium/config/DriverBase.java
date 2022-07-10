@@ -1,4 +1,4 @@
-package com.lazerycode.selenium;
+package com.lazerycode.selenium.config;
 
 import com.lazerycode.selenium.config.DriverFactory;
 import com.lazerycode.selenium.listeners.ScreenshotListener;

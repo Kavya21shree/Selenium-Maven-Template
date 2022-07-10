@@ -1,6 +1,6 @@
 package com.lazerycode.selenium.tests;
 
-import com.lazerycode.selenium.DriverBase;
+import com.lazerycode.selenium.config.DriverBase;
 import com.lazerycode.selenium.page_objects.GoogleHomePage;
 import com.lazerycode.selenium.page_objects.GoogleSearchPage;
 import org.openqa.selenium.WebDriver;

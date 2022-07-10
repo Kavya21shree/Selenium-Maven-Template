@@ -1,6 +1,6 @@
 package com.lazerycode.selenium.page_objects;
 
-import com.lazerycode.selenium.DriverBase;
+import com.lazerycode.selenium.config.DriverBase;
 import com.lazerycode.selenium.helpers.CustomExpectedConditions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;

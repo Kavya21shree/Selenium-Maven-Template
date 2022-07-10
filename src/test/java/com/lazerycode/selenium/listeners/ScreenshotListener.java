@@ -9,11 +9,11 @@ import org.openqa.selenium.remote.Augmenter;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
 
+import com.lazerycode.selenium.config.DriverBase;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-
-import static com.lazerycode.selenium.DriverBase.getDriver;
 
 public class ScreenshotListener extends TestListenerAdapter {
 
@@ -51,7 +51,7 @@ public class ScreenshotListener extends TestListenerAdapter {
     @Override
     public void onTestFailure(ITestResult failingTest) {
         try {
-            WebDriver driver = getDriver();
+            WebDriver driver = DriverBase.getDriver();
             String screenshotDirectory = System.getProperty("screenshotDirectory", "target/screenshots");
             String screenshotAbsolutePath = screenshotDirectory + File.separator + System.currentTimeMillis() + "_" + failingTest.getName() + ".png";
             File screenshot = new File(screenshotAbsolutePath);
