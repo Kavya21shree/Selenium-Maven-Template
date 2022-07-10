@@ -1,6 +1,6 @@
 package com.lazerycode.selenium.page_objects;
 
-import com.lazerycode.selenium.DriverBase;
+import com.lazerycode.selenium.config.DriverBase;
 import com.lazerycode.selenium.util.Query;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
